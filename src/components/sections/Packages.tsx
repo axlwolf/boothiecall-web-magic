@@ -2,56 +2,63 @@
 const Packages = () => {
   const packages = [
     {
-      name: "Fun",
-      price: "$8,500",
+      name: "BASELINE DIGITAL",
+      price: "$500",
       duration: "4 hours",
-      description: "Perfect for family parties and intimate celebrations",
+      description: "Competitive basic package with premium characteristics",
       features: [
-        "Professional photo booth",
-        "Basic props included",
-        "Unlimited printing",
-        "Digital gallery 24h",
-        "Custom frame",
-        "Assistant during event"
+        "Pictures mode",
+        "QR scan code delivery",
+        "Plain backdrop",
+        "1 basic template",
+        "5 sign props (double sided = 10)",
+        "$100 per extra hour"
       ],
       popular: false,
-      gradient: "from-pink-500 to-purple-600"
+      gradient: "from-blue-500 to-cyan-600"
     },
     {
-      name: "Premium",
-      price: "$12,500",
-      duration: "6 hours",
-      description: "The most popular option for weddings and special events",
+      name: "CUSTOM PACKAGE",
+      price: "Build Your Own",
+      duration: "4+ hours",
+      description: "Design your package perfect with your preferred add-ons",
       features: [
-        "Everything from Fun package",
-        "Photos + Reels + Boomerangs",
-        "2 frame designs",
-        "Premium themed props",
-        "Social media sharing",
-        "Event summary video",
-        "Personalized digital album"
+        "Start with Baseline Digital",
+        "Digital extras: Boomerang, GIFs (+$50)",
+        "Fun Filters (+$25)",
+        "SMS delivery (+$25)",
+        "Extra props (+$25 each set of 5)",
+        "All props (+$100)",
+        "Concierge service (+$100)",
+        "Special backdrop (+$50)",
+        "Print package (+$200 up to 500)",
+        "Print magnets (+$150 add-on)",
+        "Custom template (+$100)",
+        "Red carpet special (+$250)"
       ],
       popular: true,
-      gradient: "from-yellow-400 to-orange-500"
+      gradient: "from-purple-500 to-pink-600"
     },
     {
-      name: "Elite",
-      price: "$18,500",
-      duration: "8 hours",
-      description: "The most complete experience for luxury events",
+      name: "I WANT IT ALL",
+      price: "$1,250",
+      duration: "4 hours",
+      description: "All-inclusive premium package with everything included",
       features: [
-        "Everything from Premium package",
-        "Interactive magic mirror",
-        "3+ custom designs",
-        "Exclusive luxury props",
-        "Instant WhatsApp delivery",
-        "Live streaming",
-        "Total custom setup",
-        "Dedicated coordinator",
-        "Equipment backup"
+        "Picture, boomerang, GIF modes",
+        "QR code, SMS text & email delivery",
+        "Fun filters included",
+        "All props collection",
+        "Concierge service",
+        "Premium backdrop",
+        "Prints (up to 500)",
+        "Custom templates",
+        "Red carpet setup",
+        "$100 per extra hour",
+        "Does not include print magnets"
       ],
       popular: false,
-      gradient: "from-purple-600 to-indigo-700"
+      gradient: "from-yellow-400 to-orange-500"
     }
   ];
 
@@ -60,12 +67,12 @@ const Packages = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl mb-6">
-            <span className="gradient-text">Packages that Fit</span>
+            <span className="gradient-text">Design Your</span>
             <br />
-            <span className="text-foreground">Your Budget</span>
+            <span className="text-foreground">Perfect Package</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From intimate celebrations to luxury events. We have the perfect package to make your vision come true.
+            From our competitive baseline to premium all-inclusive experience. Build exactly what you need for your event.
           </p>
         </div>
 
@@ -87,7 +94,7 @@ const Packages = () => {
               {pkg.popular && (
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="bg-gradient-primary text-white px-6 py-2 rounded-full font-semibold text-sm">
-                    ⭐ MOST POPULAR
+                    ⭐ MOST FLEXIBLE
                   </div>
                 </div>
               )}
@@ -99,7 +106,7 @@ const Packages = () => {
                   <div className="flex items-center justify-center gap-2 mb-4">
                     <span className="text-4xl font-bold gradient-text">{pkg.price}</span>
                     <div className="text-muted-foreground">
-                      <div className="text-sm">MXN</div>
+                      <div className="text-sm">USD</div>
                       <div className="text-sm">{pkg.duration}</div>
                     </div>
                   </div>
@@ -109,11 +116,11 @@ const Packages = () => {
                 {/* Features */}
                 <div className="space-y-4 mb-8">
                   {pkg.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center gap-3">
-                      <div className="w-5 h-5 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <div key={featureIndex} className="flex items-start gap-3">
+                      <div className="w-5 h-5 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-xs">✓</span>
                       </div>
-                      <span className="text-foreground">{feature}</span>
+                      <span className="text-foreground text-sm">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -130,7 +137,7 @@ const Packages = () => {
                     contactSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  {pkg.popular ? '🚀 I Want This!' : 'Request Info'}
+                  {pkg.popular ? '🎯 Build My Package' : 'Get Quote'}
                 </button>
               </div>
             </div>
@@ -140,22 +147,33 @@ const Packages = () => {
         {/* Additional info */}
         <div className="text-center mt-16 animate-fade-in">
           <div className="bg-card p-8 rounded-2xl max-w-4xl mx-auto">
-            <h3 className="font-poppins font-semibold text-xl mb-4">💡 Can't find what you're looking for?</h3>
-            <p className="text-muted-foreground mb-6">
-              We create custom packages for unique events. Tell us your vision and we'll make it reality.
-            </p>
+            <h3 className="font-poppins font-semibold text-xl mb-4">💡 Add-Ons Available</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-muted-foreground mb-6">
+              <div>Digital Extras: $50</div>
+              <div>Fun Filters: $25</div>
+              <div>SMS Delivery: $25</div>
+              <div>Extra Props: $25/set</div>
+              <div>All Props: $100</div>
+              <div>Concierge: $100</div>
+              <div>Special Backdrop: $50</div>
+              <div>Print Package: $200</div>
+              <div>Print Magnets: $150</div>
+              <div>Custom Template: $100</div>
+              <div>Red Carpet: $250</div>
+              <div>Extra Hour: $100</div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#contact"
                 className="bg-gradient-secondary text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
               >
-                Custom Package
+                Design My Package
               </a>
               <a
                 href="tel:+525512345678"
                 className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
               >
-                📞 Call Now
+                📞 Call for Quote
               </a>
             </div>
           </div>
