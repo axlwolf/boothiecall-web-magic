@@ -8,45 +8,45 @@ const Gallery = () => {
     {
       id: 1,
       src: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Photo booth en boda elegante",
-      category: "Bodas"
+      alt: "Photo booth at elegant wedding",
+      category: "Weddings"
     },
     {
       id: 2,
       src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Eventos corporativos divertidos",
-      category: "Corporativo"
+      alt: "Fun corporate events",
+      category: "Corporate"
     },
     {
       id: 3,
       src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Fiesta de XV años memorable",
-      category: "XV Años"
+      alt: "Memorable Sweet 16 party",
+      category: "Sweet 16"
     },
     {
       id: 4,
       src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Celebración familiar única",
-      category: "Fiestas"
+      alt: "Unique family celebration",
+      category: "Parties"
     },
     {
       id: 5,
       src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Activación de marca exitosa",
-      category: "Marca"
+      alt: "Successful brand activation",
+      category: "Brand"
     },
     {
       id: 6,
       src: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Evento social divertido",
+      alt: "Fun social event",
       category: "Social"
     }
   ];
 
-  const categories = ['Todos', 'Bodas', 'Corporativo', 'XV Años', 'Fiestas', 'Marca', 'Social'];
-  const [activeCategory, setActiveCategory] = useState('Todos');
+  const categories = ['All', 'Weddings', 'Corporate', 'Sweet 16', 'Parties', 'Brand', 'Social'];
+  const [activeCategory, setActiveCategory] = useState('All');
 
-  const filteredImages = activeCategory === 'Todos' 
+  const filteredImages = activeCategory === 'All' 
     ? galleryImages 
     : galleryImages.filter(img => img.category === activeCategory);
 
@@ -55,10 +55,10 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl mb-6">
-            <span className="gradient-text">Galería de Eventos</span>
+            <span className="gradient-text">Event Gallery</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Revive la magia de nuestros eventos anteriores. Cada imagen cuenta una historia de diversión y alegría.
+            Relive the magic of our previous events. Every image tells a story of fun and joy.
           </p>
         </div>
 
@@ -116,19 +116,19 @@ const Gallery = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center animate-fade-in">
           <div className="p-6 rounded-xl bg-muted/50">
             <div className="text-3xl font-bold gradient-text mb-2">500+</div>
-            <div className="text-muted-foreground">Eventos Capturados</div>
+            <div className="text-muted-foreground">Events Captured</div>
           </div>
           <div className="p-6 rounded-xl bg-muted/50">
             <div className="text-3xl font-bold gradient-text mb-2">50K+</div>
-            <div className="text-muted-foreground">Fotos Tomadas</div>
+            <div className="text-muted-foreground">Photos Taken</div>
           </div>
           <div className="p-6 rounded-xl bg-muted/50">
             <div className="text-3xl font-bold gradient-text mb-2">98%</div>
-            <div className="text-muted-foreground">Clientes Satisfechos</div>
+            <div className="text-muted-foreground">Satisfied Clients</div>
           </div>
           <div className="p-6 rounded-xl bg-muted/50">
             <div className="text-3xl font-bold gradient-text mb-2">24h</div>
-            <div className="text-muted-foreground">Entrega Digital</div>
+            <div className="text-muted-foreground">Digital Delivery</div>
           </div>
         </div>
 
@@ -138,7 +138,7 @@ const Gallery = () => {
             href="#contact"
             className="inline-block bg-gradient-secondary text-white px-10 py-4 rounded-xl font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-lg"
           >
-            🎉 ¡Crea tu propia galería!
+            🎉 Create your own gallery!
           </a>
         </div>
       </div>

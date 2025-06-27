@@ -3,29 +3,29 @@ const BookingProcess = () => {
   const steps = [
     {
       number: "01",
-      title: "Cotiza",
-      description: "Completa nuestro formulario con los detalles de tu evento. Te respondemos en menos de 2 horas.",
+      title: "Quote",
+      description: "Fill out our form with your event details. We respond in less than 2 hours.",
       icon: "📝",
       color: "from-pink-500 to-purple-600"
     },
     {
       number: "02", 
-      title: "Personaliza",
-      description: "Trabajamos juntos en el diseño de marcos, selección de props y configuración del photo booth.",
+      title: "Customize",
+      description: "We work together on frame design, prop selection and photo booth configuration.",
       icon: "🎨",
       color: "from-yellow-400 to-orange-500"
     },
     {
       number: "03",
-      title: "Confirma",
-      description: "Apartas tu fecha con el 50% del total. Te enviamos la confirmación y detalles del servicio.",
+      title: "Confirm",
+      description: "Reserve your date with 50% of the total. We send you confirmation and service details.",
       icon: "✅",
       color: "from-green-400 to-blue-500"
     },
     {
       number: "04",
-      title: "¡Disfruta!",
-      description: "Llegamos 1 hora antes, instalamos todo y tu solo te preocupas por divertirte y crear recuerdos.",
+      title: "Enjoy!",
+      description: "We arrive 1 hour early, set up everything and you just worry about having fun and creating memories.",
       icon: "🎉",
       color: "from-purple-500 to-pink-600"
     }
@@ -36,12 +36,12 @@ const BookingProcess = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl mb-6">
-            <span className="gradient-text">Proceso Super Fácil</span>
+            <span className="gradient-text">Super Easy Process</span>
             <br />
-            <span className="text-foreground">en Solo 4 Pasos</span>
+            <span className="text-foreground">in Just 4 Steps</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Reservar tu photo booth es tan simple como contar hasta cuatro. Sin complicaciones, sin estrés.
+            Booking your photo booth is as simple as counting to four. No complications, no stress.
           </p>
         </div>
 
@@ -115,17 +115,17 @@ const BookingProcess = () => {
         <div className="text-center mt-16 animate-scale-in">
           <div className="bg-gradient-to-br from-primary to-secondary p-8 rounded-3xl text-white max-w-4xl mx-auto">
             <h3 className="font-poppins font-bold text-2xl md:text-3xl mb-4">
-              ¿Listos para empezar?
+              Ready to get started?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              El primer paso es el más importante. Cuéntanos sobre tu evento y recibe una cotización personalizada.
+              The first step is the most important. Tell us about your event and receive a personalized quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#contact"
                 className="bg-white text-primary px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform duration-300 shadow-lg"
               >
-                🚀 Comenzar Ahora
+                🚀 Start Now
               </a>
               <a
                 href="https://wa.me/525512345678"

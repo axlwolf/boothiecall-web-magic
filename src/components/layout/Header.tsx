@@ -26,11 +26,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { name: 'Servicios', href: '#features' },
-    { name: 'Galería', href: '#gallery' },
-    { name: 'Paquetes', href: '#packages' },
+    { name: 'Services', href: '#features' },
+    { name: 'Gallery', href: '#gallery' },
+    { name: 'Packages', href: '#packages' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'Contacto', href: '#contact' }
+    { name: 'Contact', href: '#contact' }
   ];
 
   return (

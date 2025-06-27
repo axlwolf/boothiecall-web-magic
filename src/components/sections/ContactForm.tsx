@@ -31,7 +31,7 @@ const ContactForm = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
-      console.log('Formulario enviado:', formData);
+      console.log('Form submitted:', formData);
     }, 2000);
   };
 
@@ -45,10 +45,10 @@ const ContactForm = () => {
                 <span className="text-white text-3xl">✓</span>
               </div>
               <h2 className="font-poppins font-bold text-3xl mb-4 gradient-text">
-                ¡Mensaje Enviado!
+                Message Sent!
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Gracias por contactarnos. Nuestro equipo te responderá en menos de 2 horas con una cotización personalizada para tu evento.
+                Thank you for contacting us. Our team will respond in less than 2 hours with a personalized quote for your event.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -57,7 +57,7 @@ const ContactForm = () => {
                   rel="noopener noreferrer"
                   className="bg-gradient-primary text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
                 >
-                  💬 WhatsApp para Urgencias
+                  💬 WhatsApp for Emergencies
                 </a>
                 <button
                   onClick={() => {
@@ -75,7 +75,7 @@ const ContactForm = () => {
                   }}
                   className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
                 >
-                  📝 Enviar Otro Mensaje
+                  📝 Send Another Message
                 </button>
               </div>
             </div>
@@ -90,10 +90,10 @@ const ContactForm = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl mb-6">
-            <span className="gradient-text">¡Cotiza tu Evento!</span>
+            <span className="gradient-text">Get Your Quote!</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cuéntanos sobre tu evento y recibe una cotización personalizada en menos de 2 horas. ¡Es gratis y sin compromiso!
+            Tell us about your event and receive a personalized quote in less than 2 hours. It's free and no commitment!
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const ContactForm = () => {
           <div className="animate-slide-up">
             <div className="bg-card p-8 rounded-3xl shadow-lg h-full">
               <h3 className="font-poppins font-bold text-2xl mb-6 gradient-text">
-                ¿Prefieres hablar directamente?
+                Prefer to talk directly?
               </h3>
               
               <div className="space-y-6 mb-8">
@@ -111,7 +111,7 @@ const ContactForm = () => {
                     <span className="text-white text-xl">📞</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Teléfono</h4>
+                    <h4 className="font-semibold">Phone</h4>
                     <p className="text-muted-foreground">+52 55 1234 5678</p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">WhatsApp</h4>
-                    <p className="text-muted-foreground">Respuesta inmediata</p>
+                    <p className="text-muted-foreground">Immediate response</p>
                   </div>
                 </div>
                 
@@ -132,7 +132,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-muted-foreground">hola@boothiecall.com</p>
+                    <p className="text-muted-foreground">hello@boothiecall.com</p>
                   </div>
                 </div>
                 
@@ -141,8 +141,8 @@ const ContactForm = () => {
                     <span className="text-white text-xl">📍</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Ubicación</h4>
-                    <p className="text-muted-foreground">Ciudad de México, México</p>
+                    <h4 className="font-semibold">Location</h4>
+                    <p className="text-muted-foreground">Mexico City, Mexico</p>
                   </div>
                 </div>
               </div>
@@ -154,13 +154,13 @@ const ContactForm = () => {
                   rel="noopener noreferrer"
                   className="block w-full bg-gradient-primary text-white text-center py-4 rounded-xl font-semibold hover:scale-105 transition-transform duration-300"
                 >
-                  💬 Chatear por WhatsApp
+                  💬 Chat on WhatsApp
                 </a>
                 <a
                   href="tel:+525512345678"
                   className="block w-full border-2 border-primary text-primary text-center py-4 rounded-xl font-semibold hover:bg-primary hover:text-white transition-all duration-300"
                 >
-                  📞 Llamar Ahora
+                  📞 Call Now
                 </a>
               </div>
             </div>
@@ -171,7 +171,7 @@ const ContactForm = () => {
             <form onSubmit={handleSubmit} className="bg-card p-8 rounded-3xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Nombre Completo *</label>
+                  <label className="block text-sm font-semibold mb-2">Full Name *</label>
                   <input
                     type="text"
                     name="name"
@@ -179,7 +179,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-background"
-                    placeholder="Tu nombre completo"
+                    placeholder="Your full name"
                   />
                 </div>
                 
@@ -192,14 +192,14 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-background"
-                    placeholder="tu@email.com"
+                    placeholder="your@email.com"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Teléfono *</label>
+                  <label className="block text-sm font-semibold mb-2">Phone *</label>
                   <input
                     type="tel"
                     name="phone"
@@ -212,7 +212,7 @@ const ContactForm = () => {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Tipo de Evento *</label>
+                  <label className="block text-sm font-semibold mb-2">Event Type *</label>
                   <select
                     name="eventType"
                     value={formData.eventType}
@@ -220,20 +220,20 @@ const ContactForm = () => {
                     required
                     className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-background"
                   >
-                    <option value="">Seleccionar tipo</option>
-                    <option value="boda">Boda</option>
-                    <option value="xv-anos">XV Años</option>
-                    <option value="corporativo">Evento Corporativo</option>
-                    <option value="fiesta">Fiesta/Celebración</option>
-                    <option value="activacion">Activación de Marca</option>
-                    <option value="otro">Otro</option>
+                    <option value="">Select type</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="sweet-16">Sweet 16</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="party">Party/Celebration</option>
+                    <option value="brand-activation">Brand Activation</option>
+                    <option value="other">Other</option>
                   </select>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Fecha del Evento</label>
+                  <label className="block text-sm font-semibold mb-2">Event Date</label>
                   <input
                     type="date"
                     name="eventDate"
@@ -244,44 +244,44 @@ const ContactForm = () => {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Número de Invitados</label>
+                  <label className="block text-sm font-semibold mb-2">Number of Guests</label>
                   <select
                     name="guestCount"
                     value={formData.guestCount}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-background"
                   >
-                    <option value="">Seleccionar cantidad</option>
-                    <option value="1-50">1-50 personas</option>
-                    <option value="51-100">51-100 personas</option>
-                    <option value="101-200">101-200 personas</option>
-                    <option value="201-300">201-300 personas</option>
-                    <option value="300+">Más de 300 personas</option>
+                    <option value="">Select amount</option>
+                    <option value="1-50">1-50 people</option>
+                    <option value="51-100">51-100 people</option>
+                    <option value="101-200">101-200 people</option>
+                    <option value="201-300">201-300 people</option>
+                    <option value="300+">More than 300 people</option>
                   </select>
                 </div>
               </div>
 
               <div className="mb-6">
-                <label className="block text-sm font-semibold mb-2">Ubicación del Evento</label>
+                <label className="block text-sm font-semibold mb-2">Event Location</label>
                 <input
                   type="text"
                   name="location"
                   value={formData.location}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-background"
-                  placeholder="Colonia, Delegación, Ciudad"
+                  placeholder="Neighborhood, Borough, City"
                 />
               </div>
 
               <div className="mb-8">
-                <label className="block text-sm font-semibold mb-2">Cuéntanos más sobre tu evento</label>
+                <label className="block text-sm font-semibold mb-2">Tell us more about your event</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 bg-background resize-none"
-                  placeholder="Detalles especiales, temática, horarios, etc..."
+                  placeholder="Special details, theme, schedules, etc..."
                 ></textarea>
               </div>
 
@@ -297,15 +297,15 @@ const ContactForm = () => {
                 {isSubmitting ? (
                   <span className="flex items-center justify-center gap-2">
                     <div className="w-5 h-5 border-2 border-muted-foreground border-t-transparent rounded-full animate-spin"></div>
-                    Enviando...
+                    Sending...
                   </span>
                 ) : (
-                  '🚀 Solicitar Cotización Gratis'
+                  '🚀 Request Free Quote'
                 )}
               </button>
 
               <p className="text-sm text-muted-foreground text-center mt-4">
-                * Respuesta garantizada en menos de 2 horas
+                * Guaranteed response in less than 2 hours
               </p>
             </form>
           </div>

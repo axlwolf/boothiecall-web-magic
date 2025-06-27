@@ -6,38 +6,38 @@ const Features = () => {
 
   const features = [
     {
-      title: "Tecnología de Punta",
-      description: "Captura fotos, reels y boomerangs con la mejor calidad. Tecnología que impresiona y divierte a todos.",
+      title: "Cutting-Edge Technology",
+      description: "Capture photos, reels and boomerangs with the best quality. Technology that impresses and entertains everyone.",
       icon: "📸",
       gradient: "from-pink-500 to-purple-600"
     },
     {
-      title: "Personalización Total",
-      description: "Marcos únicos, filtros personalizados y diseños que reflejan perfectamente la temática de tu evento especial.",
+      title: "Total Customization",
+      description: "Unique frames, custom filters and designs that perfectly reflect your special event's theme.",
       icon: "🎨",
       gradient: "from-yellow-400 to-orange-500"
     },
     {
-      title: "Comparte al Instante",
-      description: "Recibe tus fotos al momento vía WhatsApp, email o QR. Comparte en redes sociales sin esperar.",
+      title: "Share Instantly",
+      description: "Receive your photos instantly via WhatsApp, email or QR. Share on social media without waiting.",
       icon: "⚡",
       gradient: "from-green-400 to-blue-500"
     },
     {
-      title: "Impresión de Alta Calidad",
-      description: "Llévate recuerdos físicos con nuestra impresora profesional. Papel premium que dura toda la vida.",
+      title: "High Quality Printing",
+      description: "Take home physical memories with our professional printer. Premium paper that lasts a lifetime.",
       icon: "🖨️",
       gradient: "from-blue-500 to-indigo-600"
     },
     {
-      title: "Asistente Profesional",
-      description: "Nuestro equipo se encarga de todo. Instalación, operación y soporte durante todo tu evento.",
+      title: "Professional Assistant",
+      description: "Our team takes care of everything. Installation, operation and support throughout your entire event.",
       icon: "👨‍💼",
       gradient: "from-purple-500 to-pink-600"
     },
     {
-      title: "Props Divertidos",
-      description: "Accesorios únicos y creativos incluidos. Sombreros, gafas, letreros y más para fotos increíbles.",
+      title: "Fun Props",
+      description: "Unique and creative accessories included. Hats, glasses, signs and more for incredible photos.",
       icon: "🎭",
       gradient: "from-red-400 to-pink-500"
     }
@@ -48,10 +48,10 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl mb-6">
-            <span className="gradient-text">¿Por qué elegirnos?</span>
+            <span className="gradient-text">Why Choose Us?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            No somos solo otro photo booth. Somos la experiencia completa que hará de tu evento algo inolvidable.
+            We're not just another photo booth. We're the complete experience that will make your event unforgettable.
           </p>
         </div>
 
@@ -94,16 +94,16 @@ const Features = () => {
         <div className="text-center mt-16 animate-fade-in">
           <div className="bg-gradient-primary p-8 rounded-2xl text-white">
             <h3 className="font-poppins font-bold text-2xl md:text-3xl mb-4">
-              ¿Listo para una experiencia única?
+              Ready for a unique experience?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Más de 500 eventos exitosos nos respaldan. Tu evento será el siguiente.
+              More than 500 successful events back us up. Your event will be next.
             </p>
             <a
               href="#contact"
               className="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
             >
-              Solicitar Cotización
+              Request Quote
             </a>
           </div>
         </div>

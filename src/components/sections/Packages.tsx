@@ -2,17 +2,17 @@
 const Packages = () => {
   const packages = [
     {
-      name: "Diversión",
+      name: "Fun",
       price: "$8,500",
-      duration: "4 horas",
-      description: "Perfecto para fiestas familiares y celebraciones íntimas",
+      duration: "4 hours",
+      description: "Perfect for family parties and intimate celebrations",
       features: [
-        "Photo booth profesional",
-        "Props básicos incluidos",
-        "Impresión ilimitada",
-        "Galería digital 24h",
-        "Marco personalizado",
-        "Asistente durante evento"
+        "Professional photo booth",
+        "Basic props included",
+        "Unlimited printing",
+        "Digital gallery 24h",
+        "Custom frame",
+        "Assistant during event"
       ],
       popular: false,
       gradient: "from-pink-500 to-purple-600"
@@ -20,16 +20,16 @@ const Packages = () => {
     {
       name: "Premium",
       price: "$12,500",
-      duration: "6 horas",
-      description: "La opción más popular para bodas y eventos especiales",
+      duration: "6 hours",
+      description: "The most popular option for weddings and special events",
       features: [
-        "Todo del paquete Diversión",
-        "Fotos + Reels + Boomerangs",
-        "2 diseños de marco",
-        "Props premium temáticos",
-        "Compartir redes sociales",
-        "Video resumen del evento",
-        "Album digital personalizado"
+        "Everything from Fun package",
+        "Photos + Reels + Boomerangs",
+        "2 frame designs",
+        "Premium themed props",
+        "Social media sharing",
+        "Event summary video",
+        "Personalized digital album"
       ],
       popular: true,
       gradient: "from-yellow-400 to-orange-500"
@@ -37,18 +37,18 @@ const Packages = () => {
     {
       name: "Elite",
       price: "$18,500",
-      duration: "8 horas",
-      description: "La experiencia más completa para eventos de lujo",
+      duration: "8 hours",
+      description: "The most complete experience for luxury events",
       features: [
-        "Todo del paquete Premium",
-        "Espejo mágico interactivo",
-        "3+ diseños personalizados",
-        "Props exclusivos de lujo",
-        "Entrega inmediata WhatsApp",
-        "Streaming en vivo",
-        "Setup personalizado total",
-        "Coordinador dedicado",
-        "Backup de equipos"
+        "Everything from Premium package",
+        "Interactive magic mirror",
+        "3+ custom designs",
+        "Exclusive luxury props",
+        "Instant WhatsApp delivery",
+        "Live streaming",
+        "Total custom setup",
+        "Dedicated coordinator",
+        "Equipment backup"
       ],
       popular: false,
       gradient: "from-purple-600 to-indigo-700"
@@ -60,12 +60,12 @@ const Packages = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl mb-6">
-            <span className="gradient-text">Paquetes que se Adaptan</span>
+            <span className="gradient-text">Packages that Fit</span>
             <br />
-            <span className="text-foreground">a tu Presupuesto</span>
+            <span className="text-foreground">Your Budget</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Desde celebraciones íntimas hasta eventos de lujo. Tenemos el paquete perfecto para hacer realidad tu visión.
+            From intimate celebrations to luxury events. We have the perfect package to make your vision come true.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ const Packages = () => {
               {pkg.popular && (
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="bg-gradient-primary text-white px-6 py-2 rounded-full font-semibold text-sm">
-                    ⭐ MÁS POPULAR
+                    ⭐ MOST POPULAR
                   </div>
                 </div>
               )}
@@ -130,7 +130,7 @@ const Packages = () => {
                     contactSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  {pkg.popular ? '🚀 ¡Lo Quiero!' : 'Solicitar Info'}
+                  {pkg.popular ? '🚀 I Want This!' : 'Request Info'}
                 </button>
               </div>
             </div>
@@ -140,22 +140,22 @@ const Packages = () => {
         {/* Additional info */}
         <div className="text-center mt-16 animate-fade-in">
           <div className="bg-card p-8 rounded-2xl max-w-4xl mx-auto">
-            <h3 className="font-poppins font-semibold text-xl mb-4">💡 ¿No encuentras lo que buscas?</h3>
+            <h3 className="font-poppins font-semibold text-xl mb-4">💡 Can't find what you're looking for?</h3>
             <p className="text-muted-foreground mb-6">
-              Creamos paquetes personalizados para eventos únicos. Cuéntanos tu visión y nosotros la hacemos realidad.
+              We create custom packages for unique events. Tell us your vision and we'll make it reality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#contact"
                 className="bg-gradient-secondary text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
               >
-                Paquete Personalizado
+                Custom Package
               </a>
               <a
                 href="tel:+525512345678"
                 className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
               >
-                📞 Llamar Ahora
+                📞 Call Now
               </a>
             </div>
           </div>

@@ -6,44 +6,44 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "¿Qué necesito para instalar el photo booth?",
-      answer: "Solo necesitamos un espacio de 2.5x2.5 metros cerca de un enchufe en tu evento en CDMX. Nosotros nos encargamos del resto: transporte, instalación, configuración y operación durante todo el evento."
+      question: "What do I need to install the photo booth?",
+      answer: "We only need a 2.5x2.5 meter space near an outlet at your event in Mexico City. We take care of the rest: transportation, installation, setup and operation throughout the entire event."
     },
     {
-      question: "¿Puedo personalizar el diseño de las fotos?",
-      answer: "¡Claro que sí! Nuestro equipo de diseño trabaja contigo para crear marcos y filtros que reflejen perfectamente la temática de tu evento. Incluimos logos, colores corporativos, nombres de novios, fechas especiales y cualquier elemento que desees."
+      question: "Can I customize the photo design?",
+      answer: "Of course! Our design team works with you to create frames and filters that perfectly reflect your event's theme. We include logos, corporate colors, couple names, special dates and any element you desire."
     },
     {
-      question: "¿El servicio incluye accesorios (props)?",
-      answer: "Sí, incluimos una selección curada de props divertidos y elegantes para las fotos. Tenemos temáticas específicas para bodas, eventos corporativos, XV años, etc. También podemos conseguir props especiales bajo solicitud."
+      question: "Does the service include accessories (props)?",
+      answer: "Yes, we include a curated selection of fun and elegant props for photos. We have specific themes for weddings, corporate events, Sweet 16s, etc. We can also get special props upon request."
     },
     {
-      question: "¿Cómo recibo las fotos de mi evento?",
-      answer: "Las fotos se entregan de múltiples formas: impresión inmediata durante el evento, envío por WhatsApp en tiempo real, galería digital completa en 24 horas, y álbum personalizado. ¡Tú eliges cómo quieres recibir tus recuerdos!"
+      question: "How do I receive the photos from my event?",
+      answer: "Photos are delivered in multiple ways: immediate printing during the event, real-time WhatsApp sharing, complete digital gallery in 24 hours, and personalized album. You choose how you want to receive your memories!"
     },
     {
-      question: "¿Cubren eventos fuera de CDMX?",
-      answer: "Sí, cubrimos eventos en toda el área metropolitana de la Ciudad de México y alrededores. Para eventos fuera de la zona, aplicamos un costo adicional de traslado que cotizamos según la distancia."
+      question: "Do you cover events outside Mexico City?",
+      answer: "Yes, we cover events throughout the Mexico City metropolitan area and surroundings. For events outside the zone, we apply an additional transportation cost that we quote according to distance."
     },
     {
-      question: "¿Qué pasa si mi evento se cancela o cambia de fecha?",
-      answer: "Entendemos que los planes pueden cambiar. Ofrecemos cambios de fecha sin costo adicional con 30 días de anticipación. Para cancelaciones, aplicamos nuestra política de reembolso parcial según el tiempo de anticipación."
+      question: "What happens if my event is cancelled or the date changes?",
+      answer: "We understand that plans can change. We offer date changes at no additional cost with 30 days' notice. For cancellations, we apply our partial refund policy according to advance notice."
     },
     {
-      question: "¿Incluyen asistente durante todo el evento?",
-      answer: "Absolutamente. Siempre enviamos un asistente profesional que se encarga de la operación del photo booth, ayuda a los invitados, cambia los props, resuelve cualquier inconveniente técnico y garantiza que todo funcione perfectamente."
+      question: "Do you include an assistant throughout the entire event?",
+      answer: "Absolutely. We always send a professional assistant who takes care of photo booth operation, helps guests, changes props, resolves any technical issues and ensures everything works perfectly."
     },
     {
-      question: "¿Puedo ver las fotos en tiempo real durante el evento?",
-      answer: "¡Sí! Con nuestro sistema de galería en vivo, puedes ver todas las fotos en tiempo real desde tu teléfono. Además, los invitados pueden recibir sus fotos al instante vía WhatsApp o email con QR."
+      question: "Can I see the photos in real time during the event?",
+      answer: "Yes! With our live gallery system, you can see all photos in real time from your phone. Plus, guests can receive their photos instantly via WhatsApp or email with QR."
     },
     {
-      question: "¿Qué diferencia tienen de otros photo booths?",
-      answer: "Nos enfocamos en la experiencia completa: tecnología de última generación (fotos + reels + boomerangs), personalización total, atención al cliente excepcional, y la mejor relación calidad-precio en CDMX. Nuestros 500+ eventos exitosos nos respaldan."
+      question: "What makes you different from other photo booths?",
+      answer: "We focus on the complete experience: cutting-edge technology (photos + reels + boomerangs), total customization, exceptional customer service, and the best quality-price ratio in Mexico City. Our 500+ successful events back us up."
     },
     {
-      question: "¿Manejan eventos corporativos y activaciones de marca?",
-      answer: "¡Por supuesto! Tenemos amplia experiencia en eventos corporativos, lanzamientos de productos, activaciones de marca y campañas de marketing. Podemos integrar branding corporativo, recolectar datos de leads y crear contenido para redes sociales."
+      question: "Do you handle corporate events and brand activations?",
+      answer: "Absolutely! We have extensive experience in corporate events, product launches, brand activations and marketing campaigns. We can integrate corporate branding, collect lead data and create content for social media."
     }
   ];
 
@@ -52,10 +52,10 @@ const FAQ = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl mb-6">
-            <span className="gradient-text">Preguntas Frecuentes</span>
+            <span className="gradient-text">Frequently Asked Questions</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Resolvemos todas tus dudas para que tomes la mejor decisión para tu evento. ¿No encuentras tu respuesta? ¡Contáctanos!
+            We answer all your questions so you can make the best decision for your event. Can't find your answer? Contact us!
           </p>
         </div>
 
@@ -102,10 +102,10 @@ const FAQ = () => {
         <div className="text-center mt-16 animate-scale-in">
           <div className="bg-gradient-to-br from-muted to-muted/50 p-8 rounded-2xl">
             <h3 className="font-poppins font-semibold text-xl mb-4">
-              ¿Aún tienes dudas? 🤔
+              Still have questions? 🤔
             </h3>
             <p className="text-muted-foreground mb-6">
-              Nuestro equipo está listo para resolver cualquier pregunta específica sobre tu evento. ¡No dudes en contactarnos!
+              Our team is ready to answer any specific questions about your event. Don't hesitate to contact us!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -114,13 +114,13 @@ const FAQ = () => {
                 rel="noopener noreferrer"
                 className="bg-gradient-primary text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2"
               >
-                💬 WhatsApp Directo
+                💬 Direct WhatsApp
               </a>
               <a
                 href="#contact"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
               >
-                📧 Enviar Mensaje
+                📧 Send Message
               </a>
             </div>
           </div>

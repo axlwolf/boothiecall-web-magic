@@ -19,16 +19,16 @@ const Hero = () => {
       <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="font-poppins font-bold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            <span className="gradient-text">Más que Fotos,</span>
+            <span className="gradient-text">More than Photos,</span>
             <br />
-            <span className="text-foreground">Creamos Recuerdos</span>
+            <span className="text-foreground">We Create Memories</span>
             <br />
-            <span className="gradient-text">en un Flash</span>
+            <span className="gradient-text">in a Flash</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-slide-up">
-            Fotos, Reels y Boomerangs para que tu evento sea inolvidable. 
-            El photo booth más divertido y profesional de la CDMX.
+            Photos, Reels and Boomerangs to make your event unforgettable. 
+            The most fun and professional photo booth in Mexico City.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
@@ -36,13 +36,13 @@ const Hero = () => {
               href="#contact"
               className="bg-gradient-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:scale-105 transition-transform duration-300 animate-pulse-glow"
             >
-              ✨ Cotiza tu Evento
+              ✨ Get Your Quote
             </a>
             <a
               href="#gallery"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
             >
-              Ver Galería
+              View Gallery
             </a>
           </div>
 
@@ -50,19 +50,19 @@ const Hero = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 animate-fade-in">
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold gradient-text">500+</div>
-              <div className="text-muted-foreground">Eventos Realizados</div>
+              <div className="text-muted-foreground">Events Completed</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold gradient-text">50K+</div>
-              <div className="text-muted-foreground">Fotos Tomadas</div>
+              <div className="text-muted-foreground">Photos Taken</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold gradient-text">4.9★</div>
-              <div className="text-muted-foreground">Calificación</div>
+              <div className="text-muted-foreground">Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold gradient-text">3 Años</div>
-              <div className="text-muted-foreground">de Experiencia</div>
+              <div className="text-2xl md:text-3xl font-bold gradient-text">3 Years</div>
+              <div className="text-muted-foreground">of Experience</div>
             </div>
           </div>
         </div>
