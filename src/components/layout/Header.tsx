@@ -1,29 +1,10 @@
 
-import { useState, useEffect } from 'react';
-import { Moon, Sun, Menu, X } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import ThemeSwitcher from '@/components/ui/theme-switcher';
 
 const Header = () => {
-  const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    if (isDark) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  };
 
   const navItems = [
     { name: 'Services', href: '#features' },
@@ -39,8 +20,8 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">B</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-xl">B</span>
             </div>
             <span className="font-poppins font-bold text-xl gradient-text">BoothieCall</span>
           </div>
@@ -60,13 +41,7 @@ const Header = () => {
 
           {/* Theme Switcher & Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors duration-300"
-              aria-label="Toggle theme"
-            >
-              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
+            <ThemeSwitcher />
             
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}

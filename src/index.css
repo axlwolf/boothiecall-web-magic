@@ -48,6 +48,51 @@
   --ring: 212.7 26.8% 83.9%;
 }
 
+/* Premium Gold Theme */
+.premium {
+  --background: 0 0% 8%;
+  --foreground: 45 100% 85%;
+  --card: 0 0% 12%;
+  --card-foreground: 45 100% 85%;
+  --popover: 0 0% 12%;
+  --popover-foreground: 45 100% 85%;
+  --primary: 45 100% 60%;
+  --primary-foreground: 0 0% 8%;
+  --secondary: 45 80% 45%;
+  --secondary-foreground: 0 0% 8%;
+  --muted: 0 0% 16%;
+  --muted-foreground: 45 30% 65%;
+  --accent: 0 0% 16%;
+  --accent-foreground: 45 100% 85%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 0 0% 20%;
+  --input: 0 0% 16%;
+  --ring: 45 100% 60%;
+}
+
+.premium.light {
+  --background: 45 30% 96%;
+  --foreground: 0 0% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 12%;
+  --primary: 45 80% 35%;
+  --primary-foreground: 45 30% 96%;
+  --secondary: 45 100% 50%;
+  --secondary-foreground: 0 0% 12%;
+  --muted: 45 20% 90%;
+  --muted-foreground: 0 0% 40%;
+  --accent: 45 20% 90%;
+  --accent-foreground: 0 0% 12%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 45 15% 85%;
+  --input: 45 15% 85%;
+  --ring: 45 80% 35%;
+}
+
 * {
   @apply border-border;
 }
@@ -88,9 +133,17 @@ html {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Gradient text */
+/* Gradient text - updated for both themes */
 .gradient-text {
-  background: linear-gradient(135deg, #E91E63, #FFC107);
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Premium theme gradient text */
+.premium .gradient-text {
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,4 +159,19 @@ html {
 .dark .glass {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.premium .glass {
+  background: rgba(255, 215, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+/* Premium theme specific styles */
+.premium .bg-gradient-primary {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+.premium .bg-gradient-secondary {
+  background: linear-gradient(135deg, #B8860B 0%, #DAA520 100%);
 }
