@@ -5,42 +5,18 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
-    {
-      id: 1,
-      src: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Photo booth at elegant wedding",
-      category: "Weddings"
-    },
-    {
-      id: 2,
-      src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Fun corporate events",
-      category: "Corporate"
-    },
-    {
-      id: 3,
-      src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Memorable Sweet 16 party",
-      category: "Sweet 16"
-    },
-    {
-      id: 4,
-      src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Unique family celebration",
-      category: "Parties"
-    },
-    {
-      id: 5,
-      src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Successful brand activation",
-      category: "Brand"
-    },
-    {
-      id: 6,
-      src: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Fun social event",
-      category: "Social"
-    }
+    { id: 1, src: "/images/gallery/gallery_image_01.jpeg", alt: "Photo booth at elegant wedding", category: "Weddings" },
+    { id: 2, src: "/images/gallery/gallery_image_02.jpeg", alt: "Fun corporate events", category: "Corporate" },
+    { id: 3, src: "/images/gallery/gallery_image_03.jpeg", alt: "Memorable Sweet 16 party", category: "Sweet 16" },
+    { id: 4, src: "/images/gallery/gallery_image_04.jpeg", alt: "Unique family celebration", category: "Parties" },
+    { id: 5, src: "/images/gallery/gallery_image_05.jpeg", alt: "Successful brand activation", category: "Brand" },
+    { id: 6, src: "/images/gallery/gallery_image_06.jpeg", alt: "Fun social event", category: "Social" },
+    { id: 7, src: "/images/gallery/gallery_image_07.jpeg", alt: "Wedding event", category: "Weddings" },
+    { id: 8, src: "/images/gallery/gallery_image_08.jpeg", alt: "Corporate event", category: "Corporate" },
+    { id: 9, src: "/images/gallery/gallery_image_09.jpeg", alt: "Birthday party", category: "Parties" },
+    { id: 10, src: "/images/gallery/gallery_image_10.jpeg", alt: "Brand promotion", category: "Brand" },
+    { id: 11, src: "/images/gallery/gallery_image_11.jpeg", alt: "Social gathering", category: "Social" },
+    { id: 12, src: "/images/gallery/gallery_image_12.jpeg", alt: "Another wedding", category: "Weddings" }
   ];
 
   const categories = ['All', 'Weddings', 'Corporate', 'Sweet 16', 'Parties', 'Brand', 'Social'];

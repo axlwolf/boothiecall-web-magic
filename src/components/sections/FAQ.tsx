@@ -6,44 +6,44 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What do I need to install the photo booth?",
-      answer: "We only need a 2.5x2.5 meter space near an outlet at your event in Mexico City. We take care of the rest: transportation, installation, setup and operation throughout the entire event."
+      question: "How does customization work?",
+      answer: "With Boothie Bling, you can add whatever makes your experience extra: prints, premium props, custom templates, filters, guestbook, audio messages—you name it. Build a setup that fits your event, your vibe, and your budget."
     },
     {
-      question: "Can I customize the photo design?",
-      answer: "Of course! Our design team works with you to create frames and filters that perfectly reflect your event's theme. We include logos, corporate colors, couple names, special dates and any element you desire."
+      question: "Can I add features to Boothie Lite?",
+      answer: "Yes! Boothie Bling lets you upgrade your Boothie Lite experience however you like. Add boomerangs, GIFs, text delivery, filters, extra props, premium backdrops, prints, concierge service—even a red carpet moment."
     },
     {
-      question: "Does the service include accessories (props)?",
-      answer: "Yes, we include a curated selection of fun and elegant props for photos. We have specific themes for weddings, corporate events, Sweet 16s, etc. We can also get special props upon request."
+      question: "What’s in The Whole Boothie?",
+      answer: "The Whole Boothie is our all-inclusive experience. It comes fully loaded with multiple photo/video modes, prints (up to 500), fun filters, all props, premium backdrop, concierge, custom templates, red carpet, and roaming."
     },
     {
-      question: "How do I receive the photos from my event?",
-      answer: "Photos are delivered in multiple ways: immediate printing during the event, real-time WhatsApp sharing, complete digital gallery in 24 hours, and personalized album. You choose how you want to receive your memories!"
+      question: "Can I upgrade to The Whole Boothie after booking Boothie Lite?",
+      answer: "Absolutely. If you start with Boothie Lite and change your mind, we can apply your payment toward The Whole Boothie and upgrade your experience."
     },
     {
-      question: "Do you cover events outside Mexico City?",
-      answer: "Yes, we cover events throughout the Mexico City metropolitan area and surroundings. For events outside the zone, we apply an additional transportation cost that we quote according to distance."
+      question: "Do I need a concierge?",
+      answer: "If you're looking for a red carpet feel or want an extra set of hands to assist guests, the concierge add-on is 💯 worth it. Already included in The Whole Boothie or available à la carte with Boothie Bling."
     },
     {
-      question: "What happens if my event is cancelled or the date changes?",
-      answer: "We understand that plans can change. We offer date changes at no additional cost with 30 days' notice. For cancellations, we apply our partial refund policy according to advance notice."
+      question: "What’s the red carpet experience?",
+      answer: "Our Red Carpet Special includes stanchions, the carpet itself, and a Boothie Concierge to guide your guests. It's a total glam moment—available as a Boothie Bling upgrade or part of The Whole Boothie."
     },
     {
-      question: "Do you include an assistant throughout the entire event?",
-      answer: "Absolutely. We always send a professional assistant who takes care of photo booth operation, helps guests, changes props, resolves any technical issues and ensures everything works perfectly."
+      question: "What’s Roaming?",
+      answer: "Sometimes the best moments happen away from the backdrop. For 15 minutes, your Boothie Attendant will roam the event, snapping photos and boomerangs on the go—from the dance floor to the bar."
     },
     {
-      question: "Can I see the photos in real time during the event?",
-      answer: "Yes! With our live gallery system, you can see all photos in real time from your phone. Plus, guests can receive their photos instantly via WhatsApp or email with QR."
+      question: "Can I mix and match Boothie Bling?",
+      answer: "Yes! That’s the beauty of Boothie Bling. Pick exactly what you need and skip what you don’t. Want filters but not prints? Props but no concierge? Done and done."
     },
     {
-      question: "What makes you different from other photo booths?",
-      answer: "We focus on the complete experience: cutting-edge technology (photos + reels + boomerangs), total customization, exceptional customer service, and the best quality-price ratio in Mexico City. Our 500+ successful events back us up."
+      question: "Do you travel outside of LA?",
+      answer: "We sure do! Travel within 25 miles of Los Angeles is included. Beyond that, a small travel fee may apply—just ask and we’ll work it out."
     },
     {
-      question: "Do you handle corporate events and brand activations?",
-      answer: "Absolutely! We have extensive experience in corporate events, product launches, brand activations and marketing campaigns. We can integrate corporate branding, collect lead data and create content for social media."
+      question: "What’s your cancellation policy?",
+      answer: "Life happens; we get it. Retainers are non-refundable, but we’re happy to reschedule your date if needed (subject to availability). Just give us a heads-up at least 14 days in advance."
     }
   ];
 

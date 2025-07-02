@@ -33,9 +33,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-poppins font-semibold text-lg">Contact</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>📍 Mexico City, Mexico</p>
-              <p>📞 +52 55 1234 5678</p>
-              <p>✉️ hello@boothiecall.com</p>
+              <p>📍 LA, California, US</p>
+              <p>📞 +1 123456789</p>
+              <p>✉️ hello@boothiecall.net</p>
               <div className="flex space-x-4 mt-4">
                 <a href="#" className="text-primary hover:text-primary/80 transition-colors">
                   Instagram
